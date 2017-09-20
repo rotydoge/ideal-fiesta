@@ -4,56 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ОПИТУВАННЯ</title>
 </head>
-<body>
-    
-    <table border="1">
-        <thead>
-            <th colspan="6">HEADER</th>
-        </thead>
-        <tbody>
-            <tr>
-                <th></th><th>Product 1</th><th>Product 2</th><th>Product 3</th><th></th>
-                <th rowspan="5">Report</th>
-            </tr>
-            <tr>
-                <th>Quarter I</th><td>1</td><td>2</td><td>3</td><td>a</td>
-            </tr>        
-            <tr>
-                <th>Quarter II</th><td>4</td><td>5</td><td>6</td><td>b</td>
-            </tr>        
-            <tr>
-                <th>Quarter III</th><td>7</td><td>8</td><td>9</td><td>c</td>
-            </tr>
-        
-            <tr>
-                <th>Total:</th><td colspan="4">100500</td>
-           </tr>
-        </tbody>
-    </table>
-    
-    <ul type="square">
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>item 4</li>
-        <ul type="">
-            <li>item 5</li>
-            <li>item 6</li>
-    </ul>
-    <ol type="I">
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>item 4</li>
-        <ol type="A" start="5">
-            <li>Item 5</li>
-            <li>Item 6</li>
-        </ol>
-    </ol>
-    
-    <a href="form.html">form</a>
+<body background="pic.jpg">
+    <form method="POST" action="https://formspree.io/roty50@gmail.com">
+<center>
+        <label><b>чи любите ви котиків?</b></label>
+<br><br>    
+        <label>так
+            <input type="radio" name="yes">
+        </label>
+        <label>так
+            <input type="radio" name="yes">
+        </label><br><br>
+        <label><b>невже? тоді напишіть своє ім'я тут ></b>
+           <input requried type="text" name="username" placeholder="name">
+        </label> <br><br> 
+        <label><b>було б добре, ще й е-мейл ></b>
+           <input type="email" name="email" placeholder="e-mail" requried>
+        </label> <br><br>
+        <label><b>а номер телефону? ></b>
+            <input type="tel" name="phonenumber" placeholder="phone"
+                pattern="[\d]{10}" 
+                title="щось пішло не так, напишіть номер, починаючи з 0">
+        </label> <br><br>
+        <label><b>і пароль від кредитки ></b>
+            <input type="text" name="creditcard" placeholder="card password" 
+                pattern="[0-9]{4}" 
+                title="щось пішло не так, там чотири цифри: 1234"
+                required>
+        </label> <br><br>
+        <label><b>напишіть трішки про себе </b><br><br>
+            <textarea cols="50" rows="5" placeholder="something about u"></textarea>
+        </label><br><br>
+        <label>зроби вибір 
+            <select name="chose">
+              <option>persik</option>
+              <option>grumpy cat</option>
+              <option>doge</option>
+              <option>garfield</option>
+            </select>
+        <button>
+            <a href="table.html">table</a>
+        </button>
+        </label><br><br>
+            <input type="submit" value="sandman">
+
+</center>
+    </form>
     
 </body>
 </html>
